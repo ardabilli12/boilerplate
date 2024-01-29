@@ -1,0 +1,6 @@
+.vscode
+.DS_STORE
+.config.yaml
+.secret.yaml
+*.out
+*.html

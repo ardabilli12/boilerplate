@@ -1,0 +1,19 @@
+ENVIRONMENT: "development"
+SERVICE_NAME: "boilerplate-service"
+SERVICE_VERSION: v1.0.0
+DATABASE:
+  DIALECT: "mysql"
+  HOST: "localhost"
+  PORT: 3306
+  MAX_IDLE_CONNS:
+  MAX_OPEN_CONNS:
+  MAX_IDLE_TIME:
+  MAX_LIFE_TIME:
+REDIS:
+  HOST: "localhost"
+  PORT: 6379
+  CACHE_DB: 0
+  IDEMPOTENCY_DB: 1
+RABBITMQ:
+  HOST: "localhost"
+  PORT: 5672
