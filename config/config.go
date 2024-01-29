@@ -21,7 +21,6 @@ type Secret struct {
 	RedisSecret    RedisSecret    `mapstructure:"REDIS"`
 	RabbitMQSecret RabbitMQSecret `mapstructure:"RABBITMQ"`
 	SecuritySecret SecuritySecret `mapstructure:"SECURITY"`
-	Mpgs           MpgsSecret     `mapstructure:"MPGS"`
 
 	NewRelicLicenseKey string `mapstructure:"NEW_RELIC_LICENSE_KEY"`
 }
@@ -60,11 +59,6 @@ type RabbitMQConfig struct {
 type RabbitMQSecret struct {
 	Username string `mapstructure:"USERNAME"`
 	Password string `mapstructure:"PASSWORD"`
-}
-
-type MpgsSecret struct {
-	Username string `mapstructure:"username"`
-	Password string `mapstructure:"password"`
 }
 
 type SecuritySecret struct {

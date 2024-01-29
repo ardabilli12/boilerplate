@@ -44,7 +44,7 @@ func init() {
 	rootCmd.PersistentFlags().Bool("viper", true, "use Viper for configuration")
 	viper.BindPFlag("author", rootCmd.PersistentFlags().Lookup("author"))
 	viper.BindPFlag("useViper", rootCmd.PersistentFlags().Lookup("viper"))
-	viper.SetDefault("author", "Repository Author <repo_author@paper.id>")
+	viper.SetDefault("author", "Repository Author <repo_author@email.id>")
 }
 
 // initConfig initializes the configuration for the application.
